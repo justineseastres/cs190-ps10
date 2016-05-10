@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="KNA-Ed-0Cd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="KNA-Ed-0Cd">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -35,12 +35,20 @@
                                     <segue destination="c61-ct-CNb" kind="unwind" unwindAction="back:" id="nVu-ti-nXG"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cok-kr-jJQ">
+                                <rect key="frame" x="279" y="307" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.95304319370000001" green="0.12694672739999999" blue="0.1535572043" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="GHl-ae-M7L" firstAttribute="centerX" secondItem="yh9-TU-gcq" secondAttribute="centerX" id="5As-nQ-PPI"/>
                             <constraint firstItem="Fer-g2-jAN" firstAttribute="top" secondItem="GHl-ae-M7L" secondAttribute="bottom" constant="50" id="5yj-le-cUb"/>
                             <constraint firstItem="9fV-rk-e7W" firstAttribute="centerX" secondItem="yh9-TU-gcq" secondAttribute="centerX" id="GdG-71-sM9"/>
+                            <constraint firstItem="cok-kr-jJQ" firstAttribute="top" secondItem="Fer-g2-jAN" secondAttribute="bottom" constant="26" id="OUI-Es-Sxz"/>
+                            <constraint firstItem="cok-kr-jJQ" firstAttribute="centerX" secondItem="yh9-TU-gcq" secondAttribute="centerX" id="RoR-RK-NdR"/>
                             <constraint firstItem="Fer-g2-jAN" firstAttribute="centerX" secondItem="yh9-TU-gcq" secondAttribute="centerX" id="eqH-qJ-tPg"/>
                             <constraint firstItem="GHl-ae-M7L" firstAttribute="top" secondItem="9fV-rk-e7W" secondAttribute="bottom" constant="50" id="hXw-G8-3CD"/>
                             <constraint firstItem="9fV-rk-e7W" firstAttribute="top" secondItem="gCz-b6-CNu" secondAttribute="bottom" constant="100" id="m7q-0f-LLH"/>
@@ -48,6 +56,7 @@
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <connections>
+                        <outlet property="errorLabel" destination="cok-kr-jJQ" id="hbY-qm-mJW"/>
                         <outlet property="titleTextField" destination="GHl-ae-M7L" id="1Az-Wz-f6P"/>
                         <outlet property="view" destination="yh9-TU-gcq" id="Ecy-aV-iQ5"/>
                     </connections>
